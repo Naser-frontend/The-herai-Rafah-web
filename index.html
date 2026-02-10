@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هری رفا - توسعه وب مدرن</title>
+    <link rel="stylesheet" href="styling/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Vazirmatn', 'Tahoma', sans-serif;
+            direction: rtl;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-container">
+                    <div class="logo-icon">HR</div>
+                    <h2>هری <span class="logo-accent">رفا</span></h2>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">خانه</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">درباره ما</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">خدمات</a></li>
+                <li class="nav-item"><a href="#team" class="nav-link">تیم</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">تماس</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                خلق تجربه‌های <span class="title-accent">دیجیتال</span>
+            </h1>
+            <p class="hero-subtitle">
+                ما وب‌سایت‌ها و اپلیکیشن‌های وب زیبا و ریسپانسیو می‌سازیم که نتایج عالی برای کسب‌وکار شما به ارمغان می‌آورند
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">شروع کنید</a>
+                <a href="#about" class="btn btn-secondary">بیشتر بدانید</a>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">خدمات ما</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>توسعه وب</h3>
+                    <p>وب‌سایت‌ها و اپلیکیشن‌های وب سفارشی ساخته شده با تکنولوژی‌های مدرن</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>طراحی ریسپانسیو</h3>
+                    <p>طراحی‌های موبایل محور که روی تمام دستگاه‌ها عالی به نظر می‌رسند</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>بهینه‌سازی عملکرد</h3>
+                    <p>وب‌سایت‌های فوق‌العاده سریع بهینه‌شده برای سرعت و سئو</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">تیم ما را بشناسید</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="علی احمدی">
+                    </div>
+                    <div class="member-info">
+                        <h3>علی احمدی</h3>
+                        <p class="member-role">توسعه‌دهنده ارشد</p>
+                        <p class="member-description">
+                            توسعه‌دهنده فول‌استک با بیش از ۸ سال تجربه در ایجاد اپلیکیشن‌های وب مقیاس‌پذیر. 
+                            متخصص در React، Node.js و معماری ابری.
+                        </p>
+                        <div class="member-social">
+                            <a href="https://linkedin.com/in/naser-ahmad-mohammady" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/Naser-frontend" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://t.me/NASER_AHMAD-MOHAMMADY" target="_blank"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face" alt="سارا محمدی">
+                    </div>
+                    <div class="member-info">
+                        <h3>سارا محمدی</h3>
+                        <p class="member-role">طراح UI/UX</p>
+                        <p class="member-description">
+                            طراح خلاق با علاقه به طراحی کاربرمحور. متخصص در ایجاد رابط‌های کاربری 
+                            شهودی که تجربه کاربری را بهبود می‌بخشد و مشارکت را افزایش می‌دهد.
+                        </p>
+                        <div class="member-social">
+                            <a href="https://linkedin.com/in/naser-ahmad-mohammady" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://instagram.com/naserahmad.mohammady" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/Naser-frontend" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face" alt="محمد رضایی">
+                    </div>
+                    <div class="member-info">
+                        <h3>محمد رضایی</h3>
+                        <p class="member-role">توسعه‌دهنده بک‌اند</p>
+                        <p class="member-description">
+                            متخصص بک‌اند با تخصص در طراحی پایگاه داده و توسعه API. 
+                            با تجربه در Python، PostgreSQL و معماری میکروسرویس‌ها.
+                        </p>
+                        <div class="member-social">
+                            <a href="https://linkedin.com/in/naser-ahmad-mohammady" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/Naser-frontend" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://t.me/NASER_AHMAD-MOHAMMADY" target="_blank"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face" alt="مریم کریمی">
+                    </div>
+                    <div class="member-info">
+                        <h3>مریم کریمی</h3>
+                        <p class="member-role">مدیر پروژه</p>
+                        <p class="member-description">
+                            مدیر پروژه با تجربه که تحویل روان پروژه‌ها را تضمین می‌کند. 
+                            متخصص در روش‌های چابک و ارتباط با مشتری.
+                        </p>
+                        <div class="member-social">
+                            <a href="https://linkedin.com/in/naser-ahmad-mohammady" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://instagram.com/naserahmad.mohammady" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://t.me/NASER_AHMAD-MOHAMMADY" target="_blank"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">درباره هری رفا</h2>
+                    <p class="about-description">
+                        ما تیمی پرشور از توسعه‌دهندگان و طراحان هستیم که به ایجاد 
+                        تجربه‌های دیجیتال استثنایی اختصاص داریم. با سال‌ها تجربه ترکیبی، ما به 
+                        کسب‌وکارها کمک می‌کنیم تا ایده‌هایشان را به راه‌حل‌های وب قدرتمند تبدیل کنند.
+                    </p>
+                    <p class="about-description">
+                        رویکرد ما تکنولوژی پیشرفته را با طراحی کاربرمحور ترکیب می‌کند تا 
+                        وب‌سایت‌ها و اپلیکیشن‌هایی ارائه دهیم که نه تنها زیبا به نظر می‌رسند بلکه 
+                        عملکرد فوق‌العاده‌ای نیز دارند.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>+۵۰</h3>
+                            <p>پروژه تکمیل شده</p>
+                        </div>
+                        <div class="stat">
+                            <h3>%۹۸</h3>
+                            <p>رضایت مشتری</p>
+                        </div>
+                        <div class="stat">
+                            <h3>+۵</h3>
+                            <p>سال تجربه</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=500&fit=crop" alt="درباره ما">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">با ما در تماس باشید</h2>
+            <p class="contact-subtitle">آماده شروع پروژه بعدی‌تان هستید؟ بیایید در مورد اینکه چگونه می‌توانیم به شما در رسیدن به اهدافتان کمک کنیم صحبت کنیم.</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>آدرس</h4>
+                            <p>هرات، افغانستان</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>تلفن</h4>
+                            <p>0794490787</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>ایمیل</h4>
+                            <p>naserahmad13.mohammady@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>ساعات کاری</h4>
+                            <p>شنبه تا پنج‌شنبه: ۸:۰۰ تا ۱۷:۰۰</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="from_name" placeholder="نام شما" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="from_email" placeholder="ایمیل شما" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="موضوع" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="پیام شما" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">ارسال پیام</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-waves">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-container">
+                            <div class="logo-icon footer-logo-icon">HR</div>
+                            <h3>هری <span class="logo-accent">رفا</span></h3>
+                        </div>
+                    </div>
+                    <p>ما تجربه‌های دیجیتال خارق‌العاده می‌سازیم که کسب‌وکار شما را به سطح جدیدی می‌رساند. با ترکیب خلاقیت و تکنولوژی، راه‌حل‌های وب بی‌نظیری ارائه می‌دهیم.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/naserahmad.mohammady" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>اینستاگرام</span>
+                        </a>
+                        <a href="https://t.me/NASER_AHMAD-MOHAMMADY" target="_blank" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                            <span>تلگرام</span>
+                        </a>
+                        <a href="https://linkedin.com/in/naser-ahmad-mohammady" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>لینکدین</span>
+                        </a>
+                        <a href="https://github.com/Naser-frontend" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>گیت‌هاب</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>خدمات ما</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">توسعه وب</a></li>
+                        <li><a href="#services">طراحی ریسپانسیو</a></li>
+                        <li><a href="#services">بهینه‌سازی عملکرد</a></li>
+                        <li><a href="#services">خدمات سئو</a></li>
+                        <li><a href="#services">نگهداری و پشتیبانی</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>لینک‌های مفید</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">خانه</a></li>
+                        <li><a href="#about">درباره ما</a></li>
+                        <li><a href="#team">تیم ما</a></li>
+                        <li><a href="#contact">تماس با ما</a></li>
+                        <li><a href="#">نمونه کارها</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>اطلاعات تماس</h4>
+                    <div class="contact-info-footer">
+                        <div class="contact-item-footer">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>هرات، افغانستان</span>
+                        </div>
+                        <div class="contact-item-footer">
+                            <i class="fas fa-phone"></i>
+                            <span>0794490787</span>
+                        </div>
+                        <div class="contact-item-footer">
+                            <i class="fas fa-envelope"></i>
+                            <span>naserahmad13.mohammady@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-bottom-links">
+                        <a href="#">حریم خصوصی</a>
+                        <a href="#">شرایط استفاده</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
